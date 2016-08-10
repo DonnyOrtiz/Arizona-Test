@@ -16,6 +16,6 @@ namespace Arizona.Data.Constants
         public static string AUTH_NAME = "x-blue-auth";
         public static string TOKEN_BYPASS = "x-blue-bypass";
 
-        public static DateTime BlueCurrentDate => DateTime.Now;
+        public static DateTime ArizonaCurrentDate => DateTime.Now;
     }
 }
