@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Arizona.TestSuite</RootNamespace>
     <AssemblyName>Arizona.TestSuite</AssemblyName>
-    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -20,6 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -28,8 +30,12 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Helix">
+      <HintPath>..\..\corelibs\Helix.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\..\corelibs\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -43,6 +49,20 @@
   <ItemGroup>
     <Compile Include="GeneralTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Arizona.Data\Arizona.Data.csproj">
+      <Project>{dee912dc-a968-46b5-a986-4bc15cc57ac9}</Project>
+      <Name>Arizona.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Arizona.General\Arizona.General.csproj">
+      <Project>{477fb2ad-67e2-43b7-8b05-815d1151a39d}</Project>
+      <Name>Arizona.General</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Arizona.Library\Arizona.Library.csproj">
+      <Project>{ed2ee53d-fab7-4c12-9c42-f2d7dbd5b832}</Project>
+      <Name>Arizona.Library</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
