@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arizona.Data", "Arizona.Data\Arizona.Data.csproj", "{DEE912DC-A968-46B5-A986-4BC15CC57AC9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arizona.General", "Arizona.General\Arizona.General.csproj", "{477FB2AD-67E2-43B7-8B05-815D1151A39D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arizona.Library", "Arizona.Library\Arizona.Library.csproj", "{ED2EE53D-FAB7-4C12-9C42-F2D7DBD5B832}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arizona.TestSuite", "Arizona.TestSuite\Arizona.TestSuite.csproj", "{1BB41CE5-AC0A-4BFF-A307-C737EB5A7EEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arizona.EchoWebAPI", "Arizona.EchoWebAPI\Arizona.EchoWebAPI.csproj", "{CFDAE7CF-E07D-4879-86FA-5EE671EF7D05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arizona.WebAPI", "Arizona.WebAPI\Arizona.WebAPI.csproj", "{244AEBA8-A823-43DA-AA75-7D00473E3D82}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DEE912DC-A968-46B5-A986-4BC15CC57AC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEE912DC-A968-46B5-A986-4BC15CC57AC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEE912DC-A968-46B5-A986-4BC15CC57AC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEE912DC-A968-46B5-A986-4BC15CC57AC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{477FB2AD-67E2-43B7-8B05-815D1151A39D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{477FB2AD-67E2-43B7-8B05-815D1151A39D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{477FB2AD-67E2-43B7-8B05-815D1151A39D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{477FB2AD-67E2-43B7-8B05-815D1151A39D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED2EE53D-FAB7-4C12-9C42-F2D7DBD5B832}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED2EE53D-FAB7-4C12-9C42-F2D7DBD5B832}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED2EE53D-FAB7-4C12-9C42-F2D7DBD5B832}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED2EE53D-FAB7-4C12-9C42-F2D7DBD5B832}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BB41CE5-AC0A-4BFF-A307-C737EB5A7EEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BB41CE5-AC0A-4BFF-A307-C737EB5A7EEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BB41CE5-AC0A-4BFF-A307-C737EB5A7EEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BB41CE5-AC0A-4BFF-A307-C737EB5A7EEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFDAE7CF-E07D-4879-86FA-5EE671EF7D05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFDAE7CF-E07D-4879-86FA-5EE671EF7D05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFDAE7CF-E07D-4879-86FA-5EE671EF7D05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFDAE7CF-E07D-4879-86FA-5EE671EF7D05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{244AEBA8-A823-43DA-AA75-7D00473E3D82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{244AEBA8-A823-43DA-AA75-7D00473E3D82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{244AEBA8-A823-43DA-AA75-7D00473E3D82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{244AEBA8-A823-43DA-AA75-7D00473E3D82}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
