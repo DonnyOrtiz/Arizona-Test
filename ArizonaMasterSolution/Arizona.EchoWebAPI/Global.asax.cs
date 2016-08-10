@@ -15,8 +15,6 @@ namespace Arizona.EchoWebAPI
             GlobalConfiguration.Configure(WebApiConfig.Register);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
-
-            //BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
 
         protected void Application_Error()
@@ -24,7 +22,7 @@ namespace Arizona.EchoWebAPI
             var errorContext = new ErrorContext(HttpContext.Current);
             var ex = Server.GetLastError();
 
-            Logger.Log("Error in Api", "Context: [{0}] Error: [{1}] ", Logger.LogType.Error, errorContext, ex.ToString());
+            Logger.Log("Error in EchoAPI", "Context: [{0}] Error: [{1}] ", Logger.LogType.Error, errorContext, ex.ToString());
             Server.ClearError();
         }
     }
