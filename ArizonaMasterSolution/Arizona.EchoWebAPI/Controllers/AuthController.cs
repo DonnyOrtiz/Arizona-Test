@@ -2,6 +2,7 @@
 using System.Net.Http;
 using System.Net.Http.Formatting;
 using System.Web.Http;
+using System.Web.ModelBinding;
 
 namespace Arizona.EchoWebAPI.Controllers
 {
@@ -14,6 +15,8 @@ namespace Arizona.EchoWebAPI.Controllers
         public HttpResponseMessage Login(string username, string pwd)
         {
             return Request.CreateResponse(HttpStatusCode.OK, new {message = "OK", loveThis = true}, new JsonMediaTypeFormatter());
+
+
         }
 
         [AllowAnonymous]
@@ -21,7 +24,7 @@ namespace Arizona.EchoWebAPI.Controllers
         [HttpPost]
         public HttpResponseMessage Login(FormDataCollection f)
         {
-            return new HttpResponseMessage() { StatusCode = HttpStatusCode.Accepted  };
+            return Request.CreateResponse(HttpStatusCode.OK, new {sessionID = System.Guid.NewGuid().ToString().Substring(0,7), username = f["username"] }, new JsonMediaTypeFormatter());
         }
 
     }
