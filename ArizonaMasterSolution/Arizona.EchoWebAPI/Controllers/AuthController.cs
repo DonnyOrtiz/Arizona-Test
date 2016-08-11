@@ -13,7 +13,7 @@ namespace Arizona.EchoWebAPI.Controllers
         [HttpGet]
         public HttpResponseMessage Login(string username, string pwd)
         {
-            return new HttpResponseMessage() { StatusCode = HttpStatusCode.Accepted };
+            return Request.CreateResponse(HttpStatusCode.OK, new {message = "OK", loveThis = true}, new JsonMediaTypeFormatter());
         }
 
         [AllowAnonymous]
