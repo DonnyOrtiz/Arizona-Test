@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arizona.EchoWebAPI", "Arizo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arizona.WebAPI", "Arizona.WebAPI\Arizona.WebAPI.csproj", "{244AEBA8-A823-43DA-AA75-7D00473E3D82}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arizona.Legacy.Library", "Arizona.Legacy.Library\Arizona.Legacy.Library.csproj", "{71C19AA5-3B88-4BCA-A2F2-F396D04141C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{244AEBA8-A823-43DA-AA75-7D00473E3D82}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{244AEBA8-A823-43DA-AA75-7D00473E3D82}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{244AEBA8-A823-43DA-AA75-7D00473E3D82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71C19AA5-3B88-4BCA-A2F2-F396D04141C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71C19AA5-3B88-4BCA-A2F2-F396D04141C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71C19AA5-3B88-4BCA-A2F2-F396D04141C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71C19AA5-3B88-4BCA-A2F2-F396D04141C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
