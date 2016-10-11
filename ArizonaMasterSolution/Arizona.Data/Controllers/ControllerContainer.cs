@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Arizona.Data.Models;
+using Arizona.Data.Repository;
 
 namespace Arizona.Data.Controllers
 {
@@ -17,5 +19,21 @@ namespace Arizona.Data.Controllers
             }
         }
          */
+
+        public sealed partial class AuditController : GenericControllerBase<Audit>, IController<Audit>
+        {
+            public AuditController()
+                : base(new RepositoryContainer.AuditRepository(), "Audit")
+            {
+            }
+        }
+
+        public sealed partial class LockController : GenericControllerBase<Lock>, IController<Lock>
+        {
+            public LockController()
+                : base(new RepositoryContainer.LockRepository(), "Locks")
+            {
+            }
+        }
     }
 }
