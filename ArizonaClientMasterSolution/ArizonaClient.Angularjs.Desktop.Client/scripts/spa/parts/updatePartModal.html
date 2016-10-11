@@ -1,0 +1,47 @@
+﻿
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        Update {{part.title}}
+    </div>
+    <div class="panel-body">
+        <form class="form-horizontal" role="form">
+            <div class="form-group">
+                <div class="col-xs-8 selectContainer">
+                    <label class="control-label">Parts Status</label>
+                    <select class="form-control" ng-model="part.status" name="status">
+                        <option name="avail" value="1">Avilable</option>
+                        <option name="unavail" value="2">Unavailable</option>
+                        <option name="backorder" value="3">Back Ordered</option>
+                        <option name="disc" value="4">Discontinued</option>
+                    </select>
+
+                    <!-- <select ng-model="partStatus" class="form-control black" ng-options="option.ID as option.UniqueKey for option in partStatus" required></select> -->
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-xs-8">
+                    <label class="control-label">Select Customer Invoice</label>
+                    <angucomplete-alt id="members"
+                                      placeholder="Search customers' invoice'"
+                                      pause="200"
+                                      selected-object="selectCustomer"
+                                      input-changed="selectionChanged"
+                                      remote-url="/api/parts/customer_invoice?filter="
+                                      remote-url-data-field=""
+                                      title-field="FirstName,LastName"
+                                      description-field="Email"
+                                      input-class="form-control form-control-small"
+                                      match-class="red"
+                                      text-searching="Searching customers.."
+                                      text-no-results="No customer invoices found matching your filter." />
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="panel-footer clearfix">
+        <div class="pull-right">
+            <button type="button" class="btn btn-danger" ng-click="cancelUpdate()">Cancel</button>
+            <button type="button" class="btn btn-primary" ng-click="updatePart()" ng-disabled="!isEnabled">Update Part Status</button>
+        </div>
+    </div>
+</div>

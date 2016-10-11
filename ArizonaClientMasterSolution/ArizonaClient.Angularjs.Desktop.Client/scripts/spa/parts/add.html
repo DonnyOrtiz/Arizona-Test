@@ -1,0 +1,74 @@
+﻿<div id="addPartWrapper">
+    <hr>
+    <div class="row">
+        <!-- left column -->
+        <!-- edit form column -->
+        <div class="col-xs-9 personal-info">
+            <div class="alert alert-info alert-dismissable">
+                <a class="panel-close close" data-dismiss="alert">×</a>
+                <i class="fa fa-plus"></i>
+                Make sure you fill all required fields.
+            </div>
+
+            <form class="form-horizontal" role="form" novalidate angular-validator name="addPartForm" angular-validator-submit="AddPart()">
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-4">
+                            <label class="control-label">Part Title</label>
+                            <input class="form-control" name="title" type="text" ng-model="part.title"
+                                   validate-on="blur" required required-message="'Part title is required'" maxlength="15">
+                        </div>
+               
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="row">
+
+                        <div class="col-xs-4">
+                            <label class="control-label">Price</label>
+                            <input class="form-control" type="text" ng-model="part.amount" name="amount"
+                                   validate-on="blur" required required-message="'Part price is required'">
+                        </div>
+                     
+
+                        <div class="col-xs-4">
+                            <label class="control-label">Status</label>
+                            <select class="form-control" ng-model="part.status" name="status">
+                                <option name="avail" value="1">Avilable</option>
+                                <option name="unavail" value="2">Unavailable</option>
+                                <option name="backorder" value="3">Back Ordered</option>
+                                <option name="disc" value="4">Discontinued</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+ 
+                <div class="form-group">
+                    <label class="control-label">Description</label>
+                    <textarea class="form-control" ng-model="part.description" name="description" rows="3" validate-on="blur" required required-message="'Part description is required'" />
+                </div>
+
+
+                <div class="row">
+                    <div class="col-xs-4">
+                        Choose Part Image: <input type="file" ng-file-select="prepareFiles()">
+                    </div>
+                    <div class="row">
+                        <img src="" id="imgPreview" height="200" alt="Image preview...">
+                    </div>
+                </div>
+                <br/>
+                <div class="form-group col-xs-4">
+                    <label class="control-label"></label>
+                    <div class="">
+                        <input type="submit" class="btn btn-primary" value="Submit part" />
+                        <span></span>
+                        <a class="btn btn-default" ng-href="#/parts/{{part.ID}}">Cancel</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <hr>
+</div>

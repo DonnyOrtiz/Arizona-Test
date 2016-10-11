@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+
+<html ng-app="ArizonaClientApp">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArizonaClient - Home</title>
+    <link href="/content/css/site.css" rel="stylesheet" />
+    <link href="/content/css/bootstrap.css" rel="stylesheet" />
+    <link href="/content/css/bootstrap-theme.css" rel="stylesheet" />
+    <link href="/content/css/font-awesome.css" rel="stylesheet" />
+    <link href="/content/css/morris.css" rel="stylesheet" />
+    <link href="/content/css/toastr.css" rel="stylesheet" />
+    <link href="/content/css/jquery.fancybox.css" rel="stylesheet" />
+    <link href="/content/css/loading-bar.css" rel="stylesheet"/>
+    <link href="/content/css/ui-grid.min.css" rel="stylesheet"/>
+
+    <script src="/scripts/Vendors/modernizr.js"></script>
+
+</head>
+<body ng-controller="rootCtrl">
+
+<top-bar></top-bar>
+
+        <div class="row-offcanvas row-offcanvas-left">
+            <div id="main">
+                <div class="container">
+                    <div class="col-md-12">
+                        <p class="visible-xs">
+                            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas"><i class="glyphicon glyphicon-chevron-left"></i></button>
+                        </p>
+                        <br/>
+                        <br/>
+                        <div class="page {{ pageClass }}" ng-view></div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <script src="/Scripts/Vendors/jquery.js"></script>
+    <script src="/Scripts/Vendors/bootstrap.js"></script>
+    <script src="/Scripts/Vendors/toastr.js"></script>
+    <script src="/Scripts/Vendors/jquery.raty.js"></script>
+    <script src="/Scripts/Vendors/respond.src.js"></script>
+    <script src="/Scripts/Vendors/angular.js"></script>
+    <script src="/Scripts/Vendors/angular-route.js"></script> 
+    <script src="/Scripts/Vendors/angular-cookies.js"></script>
+    <script src="/Scripts/Vendors/angular-validator.js"></script>
+    <script src="/Scripts/Vendors/angular-base64.js"></script>
+    <script src="/Scripts/Vendors/angular-file-upload.js"></script>
+    <script src="/Scripts/Vendors/angucomplete-alt.min.js"></script>
+    <script src="/Scripts/Vendors/ui-bootstrap-tpls-0.13.1.js"></script>
+    <script src="/Scripts/Vendors/underscore.js"></script>
+    <script src="/Scripts/Vendors/raphael.js"></script>
+    <script src="/Scripts/Vendors/morris.js"></script>
+    <script src="/Scripts/Vendors/jquery.fancybox.js"></script>
+    <script src="/Scripts/Vendors/jquery.fancybox-media.js"></script>
+    <script src="/Scripts/Vendors/loading-bar.js"></script>
+    <script src="/Scripts/Vendors/ui-grid.min.js"></script>
+
+    <script src="/Scripts/spa/common/common.core.js"></script>
+    <script src="/Scripts/spa/common/common.ui.js"></script>
+    <script src="/Scripts/spa/app.js"></script>
+
+    <script src="/Scripts/spa/services/apiService.js"></script>
+    <script src="/Scripts/spa/services/notificationService.js"></script>
+    <script src="/Scripts/spa/services/membershipService.js"></script>
+    <script src="/Scripts/spa/services/fileUploadService.js"></script>
+
+    <script src="/Scripts/spa/layout/topBar.directive.js"></script>
+    <script src="/Scripts/spa/layout/customPager.directive.js"></script>
+
+    <script src="/Scripts/spa/directives/availablePart.directive.js"></script>
+    <script src="/Scripts/spa/account/loginCtrl.js"></script>
+    <script src="/Scripts/spa/account/registerCtrl.js"></script>
+    <script src="/Scripts/spa/home/rootCtrl.js"></script>
+    <script src="/Scripts/spa/home/homeServices.js"></script>
+    <script src="/Scripts/spa/home/indexCtrl.js"></script>
+
+    <script src="/Scripts/spa/parts/partsCtrl.js"></script>
+    <script src="/Scripts/spa/parts/partAddCtrl.js"></script>
+    <script src="/Scripts/spa/parts/partDetailsCtrl.js"></script>
+    <script src="/Scripts/spa/parts/partEditCtrl.js"></script>
+    <script src="/Scripts/spa/parts/updatePartStockCtrl.js"></script>
+
+    <script src="/Scripts/spa/repair/findOrderCtrl.js"></script>
+
+
+</body>
+</html>
