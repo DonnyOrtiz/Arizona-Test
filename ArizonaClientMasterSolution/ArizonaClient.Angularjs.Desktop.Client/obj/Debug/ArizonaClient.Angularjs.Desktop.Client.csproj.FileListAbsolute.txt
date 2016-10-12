@@ -1,0 +1,17 @@
+C:\kellstrom\src\Arizona\ArizonaClientMasterSolution\ArizonaClient.Angularjs.Desktop.Client\bin\roslyn\csc.exe
+C:\kellstrom\src\Arizona\ArizonaClientMasterSolution\ArizonaClient.Angularjs.Desktop.Client\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\kellstrom\src\Arizona\ArizonaClientMasterSolution\ArizonaClient.Angularjs.Desktop.Client\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\kellstrom\src\Arizona\ArizonaClientMasterSolution\ArizonaClient.Angularjs.Desktop.Client\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\kellstrom\src\Arizona\ArizonaClientMasterSolution\ArizonaClient.Angularjs.Desktop.Client\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\kellstrom\src\Arizona\ArizonaClientMasterSolution\ArizonaClient.Angularjs.Desktop.Client\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\kellstrom\src\Arizona\ArizonaClientMasterSolution\ArizonaClient.Angularjs.Desktop.Client\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\kellstrom\src\Arizona\ArizonaClientMasterSolution\ArizonaClient.Angularjs.Desktop.Client\bin\roslyn\System.Collections.Immutable.dll
+C:\kellstrom\src\Arizona\ArizonaClientMasterSolution\ArizonaClient.Angularjs.Desktop.Client\bin\roslyn\System.Reflection.Metadata.dll
+C:\kellstrom\src\Arizona\ArizonaClientMasterSolution\ArizonaClient.Angularjs.Desktop.Client\bin\roslyn\vbc.exe
+C:\kellstrom\src\Arizona\ArizonaClientMasterSolution\ArizonaClient.Angularjs.Desktop.Client\bin\roslyn\VBCSCompiler.exe
+C:\kellstrom\src\Arizona\ArizonaClientMasterSolution\ArizonaClient.Angularjs.Desktop.Client\bin\roslyn\VBCSCompiler.exe.config
+C:\kellstrom\src\Arizona\ArizonaClientMasterSolution\ArizonaClient.Angularjs.Desktop.Client\bin\ArizonaClient.Angularjs.Desktop.Client.dll.config
+C:\kellstrom\src\Arizona\ArizonaClientMasterSolution\ArizonaClient.Angularjs.Desktop.Client\bin\ArizonaClient.Angularjs.Desktop.Client.dll
+C:\kellstrom\src\Arizona\ArizonaClientMasterSolution\ArizonaClient.Angularjs.Desktop.Client\bin\ArizonaClient.Angularjs.Desktop.Client.pdb
+C:\kellstrom\src\Arizona\ArizonaClientMasterSolution\ArizonaClient.Angularjs.Desktop.Client\obj\Debug\ArizonaClient.Angularjs.Desktop.Client.dll
+C:\kellstrom\src\Arizona\ArizonaClientMasterSolution\ArizonaClient.Angularjs.Desktop.Client\obj\Debug\ArizonaClient.Angularjs.Desktop.Client.pdb

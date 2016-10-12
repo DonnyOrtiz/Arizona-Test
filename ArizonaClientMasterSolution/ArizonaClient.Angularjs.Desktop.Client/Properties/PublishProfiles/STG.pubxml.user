@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>c:\temp\kellstrom-bp-client</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/ArizonaClient.Angularjs.Desktop.Client.dll">
+      <publishTime>11/05/2015 23:41:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Build.Framework.dll">
+      <publishTime>07/07/2015 00:51:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>09/30/2015 12:43:18</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Build.Tasks.Core.dll">
+      <publishTime>07/07/2015 00:51:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Build.Utilities.Core.dll">
+      <publishTime>07/07/2015 00:51:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>09/30/2015 12:43:18</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeAnalysis.dll">
+      <publishTime>09/30/2015 12:43:18</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>09/30/2015 12:43:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>09/30/2015 12:43:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>09/30/2015 12:43:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>09/30/2015 12:43:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>09/30/2015 12:43:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>09/30/2015 12:43:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>09/30/2015 12:43:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>09/30/2015 12:43:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>09/30/2015 12:43:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>09/30/2015 12:43:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>09/30/2015 12:43:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>09/30/2015 12:43:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>09/30/2015 12:43:18</publishTime>
+    </File>
+    <File Include="bin/System.Collections.Immutable.dll">
+      <publishTime>09/30/2015 12:43:18</publishTime>
+    </File>
+    <File Include="bin/System.Reflection.Metadata.dll">
+      <publishTime>09/30/2015 12:43:18</publishTime>
+    </File>
+    <File Include="content/css/blank.gif">
+      <publishTime>09/17/2015 22:50:57</publishTime>
+    </File>
+    <File Include="content/css/bootstrap-theme.css">
+      <publishTime>09/17/2015 22:50:57</publishTime>
+    </File>
+    <File Include="content/css/bootstrap.css">
+      <publishTime>09/17/2015 22:50:57</publishTime>
+    </File>
+    <File Include="content/css/fancybox_overlay.png">
+      <publishTime>09/17/2015 22:50:57</publishTime>
+    </File>
+    <File Include="content/css/fancybox_sprite.png">
+      <publishTime>09/17/2015 22:50:57</publishTime>
+    </File>
+    <File Include="content/css/font-awesome.css">
+      <publishTime>10/02/2015 23:01:02</publishTime>
+    </File>
+    <File Include="content/css/jquery.fancybox.css">
+      <publishTime>09/17/2015 22:50:57</publishTime>
+    </File>
+    <File Include="content/css/loading-bar.css">
+      <publishTime>09/17/2015 22:50:57</publishTime>
+    </File>
+    <File Include="content/css/morris.css">
+      <publishTime>09/17/2015 22:50:57</publishTime>
+    </File>
+    <File Include="content/css/site.css">
+      <publishTime>10/05/2015 15:41:04</publishTime>
+    </File>
+    <File Include="content/css/toastr.css">
+      <publishTime>09/17/2015 22:50:57</publishTime>
+    </File>
+    <File Include="content/css/ui-grid.min.css">
+      <publishTime>08/16/2015 22:02:26</publishTime>
+    </File>
+    <File Include="content/fonts/fontawesome-webfont.eot">
+      <publishTime>09/17/2015 22:50:57</publishTime>
+    </File>
+    <File Include="content/fonts/fontawesome-webfont.svg">
+      <publishTime>09/17/2015 22:50:57</publishTime>
+    </File>
+    <File Include="content/fonts/fontawesome-webfont.ttf">
+      <publishTime>09/17/2015 22:50:57</publishTime>
+    </File>
+    <File Include="content/fonts/fontawesome-webfont.woff">
+      <publishTime>09/17/2015 22:50:57</publishTime>
+    </File>
+    <File Include="content/fonts/fontawesome-webfont.woff2">
+      <publishTime>09/17/2015 22:50:57</publishTime>
+    </File>
+    <File Include="content/fonts/FontAwesome.otf">
+      <publishTime>09/17/2015 22:50:57</publishTime>
+    </File>
+    <File Include="content/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>09/17/2015 22:50:57</publishTime>
+    </File>
+    <File Include="content/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>09/17/2015 22:50:57</publishTime>
+    </File>
+    <File Include="content/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>09/17/2015 22:50:57</publishTime>
+    </File>
+    <File Include="content/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>09/17/2015 22:50:57</publishTime>
+    </File>
+    <File Include="content/fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>09/17/2015 22:50:57</publishTime>
+    </File>
+    <File Include="content/images/kellstrom.jpg">
+      <publishTime>10/05/2015 15:34:47</publishTime>
+    </File>
+    <File Include="content/images/parts/unknown.jpg">
+      <publishTime>09/17/2015 22:50:57</publishTime>
+    </File>
+    <File Include="index.html">
+      <publishTime>11/06/2015 00:01:02</publishTime>
+    </File>
+    <File Include="scripts/spa/account/login.html">
+      <publishTime>10/01/2015 23:39:41</publishTime>
+    </File>
+    <File Include="scripts/spa/account/loginCtrl.js">
+      <publishTime>11/06/2015 23:54:44</publishTime>
+    </File>
+    <File Include="scripts/spa/account/register.html">
+      <publishTime>10/02/2015 12:01:58</publishTime>
+    </File>
+    <File Include="scripts/spa/account/registerCtrl.js">
+      <publishTime>10/06/2015 14:14:46</publishTime>
+    </File>
+    <File Include="scripts/spa/app.js">
+      <publishTime>11/06/2015 00:03:34</publishTime>
+    </File>
+    <File Include="scripts/spa/common/common.core.js">
+      <publishTime>11/05/2015 23:35:44</publishTime>
+    </File>
+    <File Include="scripts/spa/common/common.ui.js">
+      <publishTime>09/17/2015 22:50:58</publishTime>
+    </File>
+    <File Include="scripts/spa/directives/availablePart.directive.js">
+      <publishTime>10/04/2015 00:22:52</publishTime>
+    </File>
+    <File Include="scripts/spa/directives/availablePart.html">
+      <publishTime>09/17/2015 22:50:58</publishTime>
+    </File>
+    <File Include="scripts/spa/home/about.html">
+      <publishTime>10/05/2015 16:16:00</publishTime>
+    </File>
+    <File Include="scripts/spa/home/aboutCtrl.js">
+      <publishTime>10/02/2015 23:48:39</publishTime>
+    </File>
+    <File Include="scripts/spa/home/homeServices.js">
+      <publishTime>10/05/2015 11:10:42</publishTime>
+    </File>
+    <File Include="scripts/spa/home/index.html">
+      <publishTime>10/03/2015 00:29:25</publishTime>
+    </File>
+    <File Include="scripts/spa/home/indexCtrl.js">
+      <publishTime>10/05/2015 23:35:14</publishTime>
+    </File>
+    <File Include="scripts/spa/home/rootCtrl.js">
+      <publishTime>10/05/2015 23:35:54</publishTime>
+    </File>
+    <File Include="scripts/spa/layout/customPager.directive.js">
+      <publishTime>09/17/2015 22:50:58</publishTime>
+    </File>
+    <File Include="scripts/spa/layout/pager.html">
+      <publishTime>09/17/2015 22:50:58</publishTime>
+    </File>
+    <File Include="scripts/spa/layout/topBar.directive.js">
+      <publishTime>09/17/2015 22:50:58</publishTime>
+    </File>
+    <File Include="scripts/spa/layout/topBar.html">
+      <publishTime>10/02/2015 13:34:55</publishTime>
+    </File>
+    <File Include="scripts/spa/parts/add.html">
+      <publishTime>10/05/2015 15:29:34</publishTime>
+    </File>
+    <File Include="scripts/spa/parts/details.html">
+      <publishTime>10/05/2015 15:44:53</publishTime>
+    </File>
+    <File Include="scripts/spa/parts/edit.html">
+      <publishTime>10/03/2015 22:58:44</publishTime>
+    </File>
+    <File Include="scripts/spa/parts/partAddCtrl.js">
+      <publishTime>10/06/2015 15:19:56</publishTime>
+    </File>
+    <File Include="scripts/spa/parts/partDetailsCtrl.js">
+      <publishTime>10/05/2015 23:37:16</publishTime>
+    </File>
+    <File Include="scripts/spa/parts/partEditCtrl.js">
+      <publishTime>10/05/2015 23:37:18</publishTime>
+    </File>
+    <File Include="scripts/spa/parts/parts.html">
+      <publishTime>10/04/2015 22:19:22</publishTime>
+    </File>
+    <File Include="scripts/spa/parts/partsCtrl.js">
+      <publishTime>10/05/2015 23:37:21</publishTime>
+    </File>
+    <File Include="scripts/spa/parts/updatePartModal.html">
+      <publishTime>10/04/2015 00:29:09</publishTime>
+    </File>
+    <File Include="scripts/spa/parts/updatePartStockCtrl.js">
+      <publishTime>10/05/2015 23:37:22</publishTime>
+    </File>
+    <File Include="scripts/spa/services/apiService.js">
+      <publishTime>11/06/2015 23:47:06</publishTime>
+    </File>
+    <File Include="scripts/spa/services/fileUploadService.js">
+      <publishTime>10/06/2015 14:17:25</publishTime>
+    </File>
+    <File Include="scripts/spa/services/membershipService.js">
+      <publishTime>11/06/2015 23:58:40</publishTime>
+    </File>
+    <File Include="scripts/spa/services/notificationService.js">
+      <publishTime>10/02/2015 12:02:11</publishTime>
+    </File>
+    <File Include="scripts/vendors/angucomplete-alt.min.js">
+      <publishTime>09/17/2015 22:50:58</publishTime>
+    </File>
+    <File Include="scripts/vendors/angular-base64.js">
+      <publishTime>09/17/2015 22:50:58</publishTime>
+    </File>
+    <File Include="scripts/vendors/angular-cookies.js">
+      <publishTime>09/17/2015 22:50:58</publishTime>
+    </File>
+    <File Include="scripts/vendors/angular-file-upload.js">
+      <publishTime>09/17/2015 22:50:58</publishTime>
+    </File>
+    <File Include="scripts/vendors/angular-route.js">
+      <publishTime>09/17/2015 22:50:58</publishTime>
+    </File>
+    <File Include="scripts/vendors/angular-validator.js">
+      <publishTime>09/17/2015 22:50:58</publishTime>
+    </File>
+    <File Include="scripts/vendors/angular.js">
+      <publishTime>09/17/2015 22:50:58</publishTime>
+    </File>
+    <File Include="scripts/vendors/bootstrap.js">
+      <publishTime>09/17/2015 22:50:58</publishTime>
+    </File>
+    <File Include="scripts/vendors/ipcookie.js">
+      <publishTime>11/05/2015 22:26:18</publishTime>
+    </File>
+    <File Include="scripts/vendors/jquery.fancybox-media.js">
+      <publishTime>09/17/2015 22:50:58</publishTime>
+    </File>
+    <File Include="scripts/vendors/jquery.fancybox.js">
+      <publishTime>09/17/2015 22:50:59</publishTime>
+    </File>
+    <File Include="scripts/vendors/jquery.js">
+      <publishTime>09/17/2015 22:50:59</publishTime>
+    </File>
+    <File Include="scripts/vendors/jquery.raty.js">
+      <publishTime>09/17/2015 22:50:59</publishTime>
+    </File>
+    <File Include="scripts/vendors/loading-bar.js">
+      <publishTime>09/17/2015 22:50:59</publishTime>
+    </File>
+    <File Include="scripts/vendors/modernizr.js">
+      <publishTime>09/17/2015 22:50:59</publishTime>
+    </File>
+    <File Include="scripts/vendors/morris.js">
+      <publishTime>09/17/2015 22:50:59</publishTime>
+    </File>
+    <File Include="scripts/vendors/raphael.js">
+      <publishTime>09/17/2015 22:50:59</publishTime>
+    </File>
+    <File Include="scripts/vendors/respond.src.js">
+      <publishTime>09/17/2015 22:50:59</publishTime>
+    </File>
+    <File Include="scripts/vendors/toastr.js">
+      <publishTime>09/17/2015 22:50:59</publishTime>
+    </File>
+    <File Include="scripts/vendors/ui-bootstrap-tpls-0.13.1.js">
+      <publishTime>09/17/2015 22:50:59</publishTime>
+    </File>
+    <File Include="scripts/vendors/ui-grid.min.js">
+      <publishTime>08/16/2015 22:01:37</publishTime>
+    </File>
+    <File Include="scripts/vendors/underscore.js">
+      <publishTime>09/17/2015 22:50:59</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>11/05/2015 08:01:32</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
