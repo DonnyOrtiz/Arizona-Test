@@ -54,8 +54,12 @@
     <Compile Include="Controllers\IController.cs" />
     <Compile Include="Extentions\StringExtensionMethods.cs" />
     <Compile Include="Infra\AppRepository.cs" />
+    <Compile Include="Infra\Auditor.cs" />
+    <Compile Include="Infra\DataLocker.cs" />
     <Compile Include="Infra\IAppRepository.cs" />
+    <Compile Include="Models\Audit.cs" />
     <Compile Include="Models\IModel.cs" />
+    <Compile Include="Models\Lock.cs" />
     <Compile Include="Models\ModelBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\IGenericRepository.cs" />
