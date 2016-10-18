@@ -1,27 +1,29 @@
 ﻿<div>
-<div class="navbar navbar-default navbar-fixed-top" ng-hide="uid">
+<div class="navbar navbar-inverse navbar-fixed-top" ng-hide="uid" style="border-bottom:2px solid #F58220">
     <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand active" href="#/">Kellstrom Phoenix</a>
     </div>
     <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
-            <li><a href="#/">Home<i class="fa fa-home fa-fw pull-right"></i></a></li>
-            <li><a href="#/parts">Parts<i class="fa fa-gear fa-fw pull-right"></i></a></li>
-            <li><a href="#about">About<i class="fa fa-info-circle fa-fw pull-right"></i></a></li>
+            <li><a href="#/"><i class="fa fa-home fa-fw pull-left" style="font-size:20px;"></i>Phoenix</a></li>
+            <li><a href="#about"><i class="fa fa-info-circle pull-left" style="font-size:20px;"></i>About</a></li>
         </ul>
-        <ul class="nav navbar-nav navbar-right" ng-if="userData.isUserLoggedIn">
-            <li class="userinfo"><a href="#/">{{username}}<i class="fa fa-user fa-fw"></i></a></li>
-            <li><button type="button" class="btn btn-danger btn-sm" ng-click="logout();" ng-if="userData.isUserLoggedIn">Logout<i class="fa fa-sign-out fa-fw pull-right"></i></button></li>
-        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li style="padding-right:15px;"><a ng-href="#/login" ng-if="!userData.isUserLoggedIn">Login<i class="fa fa-sign-in fa-fw pull-left" style="font-size:20px;"></i></a></li>
+            <li class="dropdown" ng-if="userData.isUserLoggedIn">
+                <a class="dropdown-toggle" data-toggle="dropdown"> &nbsp; {{username}}<i class="fa fa-caret-down fa-fw pull-right" style="font-size:20px;"></i></a>
+                <ul class="dropdown-menu" dropdown-menu style="min-width:180px;">
+                    <li><a href="#/"><i class="fa fa-user fa-fw pull-left" style="font-size:20px;"></i>Account</a></li>
+                    <li><a href="#/"><i class="fa fa-user fa-fw pull-left" style="font-size:20px;"></i>Password</a></li>
+                    <li><a href="#/" ng-click="logout();"><i class="fa fa-user fa-fw pull-left" style="font-size:20px;"></i>Logout</a></li>
+                </ul>
+            </li>
+        </ul>        
 
-        <ul class="nav navbar-nav navbar-right" ng-if="!userData.isUserLoggedIn">
-        <li><a ng-href="#/login" ng-if="!userData.isUserLoggedIn">Login<i class="fa fa-sign-in fa-fw pull-right"></i></a></li>
-            </ul>
     </div>
 </div>
     <div class="navbar navbar-default navbar-fixed-top" ng-show="uid">

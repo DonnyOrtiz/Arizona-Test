@@ -15,7 +15,7 @@
         };
 
         function get(url, config, success, failure) {
-            var request = $rootScope.blueprint_constants.url + ":" + $rootScope.blueprint_constants.port + url;
+            var request = $rootScope.phoenix_constants.url + ":" + $rootScope.phoenix_constants.port + url;
             console.log("get:" + request);
 
             return $http.get(request, config, success, failure)
@@ -41,9 +41,9 @@
         }
 
         function post(url, data, success, failure) {
-            console.log("post:" + $rootScope.blueprint_constants.url + ":" + $rootScope.blueprint_constants.port + url + data);
+            console.log("post:" + $rootScope.phoenix_constants.url + ":" + $rootScope.phoenix_constants.port + url + data);
             
-            return $http.post($rootScope.blueprint_constants.url + ":" + $rootScope.blueprint_constants.port + url, data)
+            return $http.post($rootScope.phoenix_constants.url + ":" + $rootScope.phoenix_constants.port + url, data)
                     .then(function (result) {
                         success(result);
                         console.log(result.data || result);
@@ -66,9 +66,9 @@
         }
 
         function destroy(url, data, success, failure) {
-            console.log("destroy:" + $rootScope.blueprint_constants.url + ":" + $rootScope.blueprint_constants.port + url);
+            console.log("destroy:" + $rootScope.phoenix_constants.url + ":" + $rootScope.phoenix_constants.port + url);
 
-            return $http.delete($rootScope.blueprint_constants.url + ":" + $rootScope.blueprint_constants.port + url, data)
+            return $http.delete($rootScope.phoenix_constants.url + ":" + $rootScope.phoenix_constants.port + url, data)
                     .then(function (result) {
                         success(result);
                         console.log(result.data || result);

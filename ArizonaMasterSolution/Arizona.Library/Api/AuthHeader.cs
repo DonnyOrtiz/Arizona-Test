@@ -15,7 +15,7 @@ namespace Arizona.Library.Api
             {
                 try
                 {
-                    return headerArray.FirstOrDefault(n => n.ToLower().Contains(Arizona.onstants.TOKEN_BYPASS)).Split(':')[1].Trim() == "deadbeef123";
+                    return headerArray.FirstOrDefault(n => n.ToLower().Contains(ArizonaConstants.TOKEN_BYPASS)).Split(':')[1].Trim() == "deadbeef123";
                 }
                 catch
                 {
@@ -30,7 +30,7 @@ namespace Arizona.Library.Api
             {
                 try
                 {
-                    return headerArray.FirstOrDefault(n => n.ToLower().Contains(Arizona.onstants.TOKEN_NAME)).Split(':')[1].Trim();
+                    return headerArray.FirstOrDefault(n => n.ToLower().Contains(ArizonaConstants.TOKEN_NAME)).Split(':')[1].Trim();
                 }
                 catch
                 {
@@ -45,7 +45,7 @@ namespace Arizona.Library.Api
             {
                 try
                 {
-                    return long.Parse(headerArray.FirstOrDefault(n => n.ToLower().Contains(Arizona.onstants.NONCE_NAME)).Split(':')[1].Trim());
+                    return long.Parse(headerArray.FirstOrDefault(n => n.ToLower().Contains(ArizonaConstants.NONCE_NAME)).Split(':')[1].Trim());
                 }
                 catch
                 {
@@ -60,7 +60,7 @@ namespace Arizona.Library.Api
             {
                 try
                 {
-                    return headerArray.FirstOrDefault(n => n.ToLower().Contains(Arizona.onstants.AUTH_NAME)).Split(':')[1].Trim();
+                    return headerArray.FirstOrDefault(n => n.ToLower().Contains(ArizonaConstants.AUTH_NAME)).Split(':')[1].Trim();
                 }
                 catch
                 {

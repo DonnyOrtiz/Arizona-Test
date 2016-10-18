@@ -7,7 +7,7 @@ namespace Arizona.General
 {
     public sealed class AppSettings
     {
-        public static string ApplicationName => "Blueprint";
+        public static string ApplicationName => "Kellstrom Phoenix";
 
         public static string Culture => Settings.Get("culture_lang").DefaultValue("en-US");
 

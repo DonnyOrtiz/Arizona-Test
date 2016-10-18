@@ -10,15 +10,37 @@ namespace Arizona.Data.Controllers
 {
     public sealed class ControllerContainer
     {
-        /*
-         public sealed partial class CustomerController : GenericControllerBase<Customer>, IController<Customer>
+        public sealed partial class UserObjectController : GenericControllerBase<UserObject>, IController<UserObject>
         {
-            public CustomerController()
-                : base(new RepositoryContainer.CustomerRepository(), "Customers")
+            public UserObjectController()
+                : base(new RepositoryContainer.UserObjectRepository(), "UserObject")
             {
             }
         }
-         */
+
+        public sealed partial class RolesController : GenericControllerBase<Role>, IController<Role>
+        {
+            public RolesController()
+                : base(new RepositoryContainer.RolesRepository(), "Roles")
+            {
+            }
+        }
+
+        public sealed partial class UserRolesController : GenericControllerBase<UserRoles>, IController<UserRoles>
+        {
+            public UserRolesController()
+                : base(new RepositoryContainer.UserRolesRepository(), "UserRoles")
+            {
+            }
+        }
+
+        public sealed partial class SessionController : GenericControllerBase<Session>, IController<Session>
+        {
+            public SessionController()
+                : base(new RepositoryContainer.SessionRepository(), "Sessions")
+            {
+            }
+        }
 
         public sealed partial class AuditController : GenericControllerBase<Audit>, IController<Audit>
         {

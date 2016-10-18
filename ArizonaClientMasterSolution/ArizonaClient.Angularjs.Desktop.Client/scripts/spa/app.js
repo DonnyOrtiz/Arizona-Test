@@ -20,47 +20,16 @@
                 templateUrl: "scripts/spa/account/login.html",
                 controller: "loginCtrl"
             })
-            .when("/register", {
-                templateUrl: "scripts/spa/account/register.html",
-                controller: "registerCtrl"
-            })
-            .when("/parts", {
-                templateUrl: "scripts/spa/parts/parts.html",
-                controller: "partsCtrl"
-            })
-            .when("/parts/add", {
-                templateUrl: "scripts/spa/parts/add.html",
-                controller: "partAddCtrl",
-                resolve: {
-                    isAuthenticated: isAuthenticated
-                }
-            })
-            .when("/parts/details/:id", {
-                templateUrl: "scripts/spa/parts/details.html",
-                controller: "partDetailsCtrl",
-                resolve: {
-                    isAuthenticated: isAuthenticated
-                }
-            })
-            .when("/repair/findOrders", {
-                templateUrl: "scripts/spa/repair/findOrder.html",
-                controller: "repairFindOrderCtrl"
-            })
-            .when("/parts/edit/:id", {
-                templateUrl: "scripts/spa/parts/edit.html",
-                controller: "partEditCtrl"
-            })
-           .otherwise({ redirectTo: "/" });
+            .otherwise({ redirectTo: "/" });
     }
 
     run.$inject = ['$rootScope', '$location', '$cookieStore', '$http', 'membershipService'];
     function run($rootScope, $location, $cookieStore, $http, membershipService) {
-        $rootScope.blueprint_constants = {
-             url: "http://kmphxastg-api.almchi.airliance.com",
-             port: 80,
+        $rootScope.phoenix_constants = {
+             url: "http://localhost",
+             port: 2831,
             app_name: "ArizonaClient"
         };
-
         passthroughAuthentication($rootScope, $location, $http, membershipService);
 
         $rootScope.repository = $cookieStore.get('repository') || {};
@@ -100,22 +69,24 @@
 
     passthroughAuthentication.$inject = ['$rootScope', '$location', '$http', 'membershipService'];
     function passthroughAuthentication($rootScope, $location, $http, membershipService) {
-        if ($location.search().uid) {
-            $rootScope.uid = $location.search().uid;
-            membershipService.passthrough($location.search().uid, 
+        console.log("starting pass data using " + $location.search().Passthrough)
+        if ($location.search().Passthrough) {
+            membershipService.passthrough($location.search().Passthrough,
                 function (result) {
-                    if (result.data.data[0].success) {
-                        $rootScope.user = {
-                            username: result.data.data[0].authResult.user.u_logon_name,
-                            email: result.data.data[0].authResult.user.u_email_address
-                        }
-                        membershipService.saveCredentials($rootScope.user, result);
-                        $http.defaults.headers.common['Authorization'] = $rootScope.repository.loggedUser.authdata;
+                    var r = result;
+                    console.log(r);
+                    if (r.data.data[0].success) {
+                        membershipService.saveCredentials($rootScope.user, r);
                         $rootScope.userData.displayUserInfo();
-                        $rootScope.$apply;
+                        //if ($rootScope.previousState)
+                        //    $location.path($rootScope.previousState);
+                        //else
+                        //    $location.path('/');
                     }
-                }
-                );
+                    else {
+                        notificationService.displayError('Authentication failed.' + r.message);
+                    }
+                });
         }
     }
 

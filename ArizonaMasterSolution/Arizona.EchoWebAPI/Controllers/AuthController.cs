@@ -14,18 +14,29 @@ namespace Arizona.EchoWebAPI.Controllers
         [HttpGet]
         public HttpResponseMessage Login(string username, string pwd)
         {
-            return Request.CreateResponse(HttpStatusCode.OK, new {message = "OK", loveThis = true}, new JsonMediaTypeFormatter());
-
-
+            if (username.ToLower() == "test")
+            {
+                return Request.CreateResponse(HttpStatusCode.OK, new { g_session_id = System.Guid.NewGuid().ToString().Substring(0, 7), g_user_id = "3642046A-E4DC-49C5-A3AE-22FD53403C98", u_logon_name = "test.user01", u_first_name = "Test", u_last_name = "User (001)", i_account_Status = true }, new JsonMediaTypeFormatter());
+            }
+            else
+            {
+                return Request.CreateResponse(HttpStatusCode.NotFound, new { message = "The username or password you supplied is not correct" }, new JsonMediaTypeFormatter());
+            }
         }
 
         [AllowAnonymous]
         [HttpOptions]
-        [HttpPost]
-        public HttpResponseMessage Login(FormDataCollection f)
+        [HttpGet]
+        public HttpResponseMessage Passthrough(string uid)
         {
-            return Request.CreateResponse(HttpStatusCode.OK, new {sessionID = System.Guid.NewGuid().ToString().Substring(0,7), username = f["username"] }, new JsonMediaTypeFormatter());
+            if (uid == "3642046A-E4DC-49C5-A3AE-22FD53403C98" || uid == "test.user01")
+            {
+                return Request.CreateResponse(HttpStatusCode.OK, new { g_session_id = System.Guid.NewGuid().ToString().Substring(0, 7), g_user_id = "3642046A-E4DC-49C5-A3AE-22FD53403C98", u_logon_name = "test.user01", u_first_name = "Test", u_last_name = "User (001)", i_account_Status = true }, new JsonMediaTypeFormatter());
+            }
+            else
+            {
+                return Request.CreateResponse(HttpStatusCode.NotFound, new { message = "The username or password you supplied is not correct" }, new JsonMediaTypeFormatter());
+            }
         }
-
     }
 }

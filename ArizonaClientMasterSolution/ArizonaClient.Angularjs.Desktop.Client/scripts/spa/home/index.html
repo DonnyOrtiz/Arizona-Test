@@ -1,51 +1,8 @@
-﻿<hr />
-<div class="row">
-    {{ 'user id = ' + uid }}
-    <div class="col-md-12">
-        <div class="panel panel-primary" id="panelLatestParts">
-            <div class="panel-heading">
-                <h3 class="panel-title">Latest Parts </h3>
-            </div>
-
-            <div class="panel-body">
-                <div ng-if="loadingParts">
-                    <div class="col-xs-4"></div>
-                    <div class="col-xs-4">
-                        <i class="fa fa-refresh fa-5x fa-spin"></i> <label class="label label-primary">Loading parts...</label>
-                    </div>
-                    <div class="col-xs-4"></div>
-                </div>
-                <div class="col-xs-12 col-sm-6 part" ng-repeat="part in latestParts">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <strong>{{part.description}} </strong>
-                        </div>
-                        <div class="panel-body">
-                            <div class="media">
-                                <i class="pull-left" href="#">
-                                    <a class="fancybox pull-left" rel="gallery1" ng-href="{{part.imagePath}}" title="{{part.description | limitTo:20}}">
-                                        <img class="media-object" height="120" ng-src="{{part.imagePath}}" alt="" />
-                                    </a>
-
-                                </i>
-                                <div class="media-body">
-                                    Part Status: <available-part is-available="{{part.status}}"></available-part> {{part.status}}<br/>
-                                    <div>Part Price: <small>{{part.amount | currency}}...</small></div>
-                                    ID: <label class="label label-info">{{part.ID}}</label><br />
-                                </div>
-                                <br />
-                            </div>
-                        </div>
-                        <div class="panel-footer">
-                            <a class="fancybox-media pull-right" ng-href="{{part.imagePath}}">Picture<i class="fa fa-video-camera fa-fw"></i></a>
-                            &nbsp;
-                            <a class="fancybox-media pull-right" ng-href="/#/parts/details/{{part.ID}}">View<i class="fa fa-desktop fa-fw"></i></a>
-                            <br />
-                        </div>
-                    </div>
-                </div>
-            </div>
+﻿    <div class="row">
+        <div class="col-xs-12" style="padding-top:50px;">
+            <center>
+                <img src="/content/images/logo-lg.png" width="200" height="200" /><br />
+            </center>
         </div>
+
     </div>
-    
-</div>

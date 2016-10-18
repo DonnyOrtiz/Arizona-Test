@@ -6,22 +6,34 @@ namespace Arizona.Data.Repository
 {
     public sealed class RepositoryContainer
     {
-        /*
-         [TableName("Customers")]
-        public sealed class CustomerRepository : AppRepository, IRepository
+
+        [TableName("UserObject")]
+        public sealed class UserObjectRepository : AppUserRepository, IRepository
         {
         }
-         
-         */
 
-        //This is currently pointing to the "ARZ" database table "audit" but can be moved to another server/database but adjusting connection string in app|web.config
+        [TableName("Roles")]
+        public sealed class RolesRepository : AppUserRepository, IRepository
+        {
+        }
+
+        [TableName("UserRoles")]
+        public sealed class UserRolesRepository : AppUserRepository, IRepository
+        {
+        }
+
+        [TableName("Sessions")]
+        public sealed class SessionRepository : AppHealthRepository, IRepository
+        {
+        }
+
         [TableName("Audit")]
-        public sealed class AuditRepository : AppRepository, IRepository
+        public sealed class AuditRepository : AppHealthRepository, IRepository
         {
         }
 
         [TableName("Locks")]
-        public sealed class LockRepository : AppRepository, IRepository
+        public sealed class LockRepository : AppHealthRepository, IRepository
         {
         }
     }
