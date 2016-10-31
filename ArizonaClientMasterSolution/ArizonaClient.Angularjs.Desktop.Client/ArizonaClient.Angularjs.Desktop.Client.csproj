@@ -44,7 +44,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="content\css\blank.gif" />
     <Content Include="content\css\bootstrap-theme.css" />
     <Content Include="content\css\bootstrap.css" />
     <Content Include="content\css\fancybox_overlay.png" />
@@ -53,6 +52,7 @@
     <Content Include="content\css\jquery.fancybox.css" />
     <Content Include="content\css\loading-bar.css" />
     <Content Include="content\css\morris.css" />
+    <Content Include="content\css\required.png" />
     <Content Include="content\css\site.css" />
     <Content Include="content\css\toastr.css" />
     <Content Include="content\css\ui-grid.min.css" />

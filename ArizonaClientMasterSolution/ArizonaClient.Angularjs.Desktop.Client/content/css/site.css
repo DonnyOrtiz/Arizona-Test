@@ -5,6 +5,12 @@ body {
     padding-top: 50px;
     background-color: white;
 }
+:required {
+    background-image:url(/content/css/required.png);
+    background-position-x: right;
+    background-position-y:top;
+    background-repeat:no-repeat;
+}
 /*
  * bootstrap overrides
  * --------------------------------------------------
